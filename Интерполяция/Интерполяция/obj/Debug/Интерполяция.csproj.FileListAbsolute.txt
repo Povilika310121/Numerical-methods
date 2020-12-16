@@ -1,0 +1,20 @@
+C:\Users\Виктория\Desktop\Интерполяция\Интерполяция\bin\Debug\Интерполяция.exe.config
+C:\Users\Виктория\Desktop\Интерполяция\Интерполяция\bin\Debug\Интерполяция.exe
+C:\Users\Виктория\Desktop\Интерполяция\Интерполяция\bin\Debug\Интерполяция.pdb
+C:\Users\Виктория\Desktop\Интерполяция\Интерполяция\obj\Debug\Интерполяция.csprojAssemblyReference.cache
+C:\Users\Виктория\Desktop\Интерполяция\Интерполяция\obj\Debug\Интерполяция.Form1.resources
+C:\Users\Виктория\Desktop\Интерполяция\Интерполяция\obj\Debug\Интерполяция.Properties.Resources.resources
+C:\Users\Виктория\Desktop\Интерполяция\Интерполяция\obj\Debug\Интерполяция.csproj.GenerateResource.cache
+C:\Users\Виктория\Desktop\Интерполяция\Интерполяция\obj\Debug\Интерполяция.csproj.CoreCompileInputs.cache
+C:\Users\Виктория\Desktop\Интерполяция\Интерполяция\obj\Debug\Интерполяция.exe
+C:\Users\Виктория\Desktop\Интерполяция\Интерполяция\obj\Debug\Интерполяция.pdb
+C:\Users\Виктория\Desktop\2 курс\Алгоритмы\Интерполяция\Интерполяция\bin\Debug\Интерполяция.exe.config
+C:\Users\Виктория\Desktop\2 курс\Алгоритмы\Интерполяция\Интерполяция\bin\Debug\Интерполяция.exe
+C:\Users\Виктория\Desktop\2 курс\Алгоритмы\Интерполяция\Интерполяция\bin\Debug\Интерполяция.pdb
+C:\Users\Виктория\Desktop\2 курс\Алгоритмы\Интерполяция\Интерполяция\obj\Debug\Интерполяция.csprojAssemblyReference.cache
+C:\Users\Виктория\Desktop\2 курс\Алгоритмы\Интерполяция\Интерполяция\obj\Debug\Интерполяция.Form1.resources
+C:\Users\Виктория\Desktop\2 курс\Алгоритмы\Интерполяция\Интерполяция\obj\Debug\Интерполяция.Properties.Resources.resources
+C:\Users\Виктория\Desktop\2 курс\Алгоритмы\Интерполяция\Интерполяция\obj\Debug\Интерполяция.csproj.GenerateResource.cache
+C:\Users\Виктория\Desktop\2 курс\Алгоритмы\Интерполяция\Интерполяция\obj\Debug\Интерполяция.csproj.CoreCompileInputs.cache
+C:\Users\Виктория\Desktop\2 курс\Алгоритмы\Интерполяция\Интерполяция\obj\Debug\Интерполяция.exe
+C:\Users\Виктория\Desktop\2 курс\Алгоритмы\Интерполяция\Интерполяция\obj\Debug\Интерполяция.pdb
