@@ -16,34 +16,50 @@ namespace Задача_Коши_Метод_Эйлера
 		{
 			InitializeComponent();
 		}
-		// отрезок [0,1]
 		private void button1_Click(object sender, EventArgs e)
 		{
-			this.chart1.Series[0].Points.Clear();
-			double h = 0.01;
-			int size = Convert.ToInt32(1 / h);
-			double[] x = new double[size]; //массив x`ов
-			double[] y = new double[size]; //массив у`ов
-			x[0] = (double)this.x0.Value;  //начальное условие для х
-			y[0] = (double)this.y0.Value;  //начальное условие для у
-			int  n = (int)this.n.Value;		//количество итераций
-
 			double func(double a, double b) // функция y`=f(x,y)
 			{
-				return 6 * a * a + 5 * a * b; 
+				return ((b * b) / 2 - (b / a));
 			}
-		
-			for (int i = 0; i < n - 1; ++i) //y[i]=y[i-1]+h*f(x[i-1],y[i-1])
-			{
-				y[i + 1] += h * func(x[i], y[i]);
-				x[i+1] += h;
-				Console.WriteLine($"{y[i+1]} - {x[i+1]}");
-			}
-			chart1.ChartAreas[0].AxisX.Minimum = 0;//начало отрезка
-			chart1.ChartAreas[0].AxisX.Maximum = 1;//конец отрезка
-			chart1.ChartAreas[0].AxisX.MajorGrid.Interval = 0.2;//шаг
-			chart1.Series[0].Points.DataBindXY(x, y);//точки
-		}	
-	}
 
+			double func_(double a) // функция y_0=у(x)
+			{
+				return 2 / (a - a * Math.Log(a));
+			}
+
+			this.chart1.Series[0].Points.Clear();
+			this.chart1.Series[1].Points.Clear();
+
+			int n = (int)this.n.Value;     //количество итераций
+			double[] x = new double[n]; //массив x`ов
+			double[] y = new double[n]; //массив у`ов
+			double[] x_ = new double[n]; //массив x`ов аналитического способа
+			double[] y_ = new double[n]; //массив у`ов аналитического способа
+			double h = (double) 1/n; //шаг
+			double nevyazka = 0;
+			
+			x[0] = 1;	//начальное условие для х
+			y[0] = 2;   //начальное условие для у
+			x_[0] = 1;
+			y_[0] = 2;
+					
+			for (int i = 0; i < n - 1; ++i) 
+			{
+				y[i + 1] = y[i] + h * func(x[i], y[i]);
+				x[i+1] = x[i] + h;
+				y_[i + 1] = func_(x_[i]);
+				x_[i + 1] = x_[i] + h;
+				if (Math.Abs(y_[i + 1] - y[i]) > nevyazka)
+					nevyazka = y_[i + 1] - y[i];
+			}
+			this.textBox5.Text=nevyazka.ToString();
+			// отрезок [1,2]
+			chart1.ChartAreas[0].AxisX.Minimum = 1;//начало отрезка
+			chart1.ChartAreas[0].AxisX.Maximum = 2;//конец отрезка
+			chart1.ChartAreas[0].AxisX.MajorGrid.Interval = 0.1;//шаг
+			chart1.Series[0].Points.DataBindXY(x, y);//точки численный метод
+			chart1.Series[1].Points.DataBindXY(x_, y_);//точки аналитический метод
+		}
+	}
 }
